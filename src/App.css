@@ -7,4 +7,7 @@
     padding-bottom: 20px;
     padding-left: 128px;
     padding-right: 128px;
+    background: rgb(14,116,144);
+    background: linear-gradient(180deg, rgba(14,116,144,1) 0%, rgba(29,78,216,1) 50%, rgba(29,78,216,1) 100%);
+    box-shadow: 0px 8px 36px #9ca3af;
 }

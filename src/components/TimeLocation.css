@@ -1,0 +1,29 @@
+.TimeBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.Time {
+    color: white;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 200;
+}
+
+.LocationBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.Location {
+    color: white;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+}

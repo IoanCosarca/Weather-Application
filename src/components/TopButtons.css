@@ -1,0 +1,14 @@
+.ButtonsBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.button {
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+}

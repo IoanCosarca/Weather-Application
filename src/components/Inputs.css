@@ -1,0 +1,49 @@
+.InputsBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.SearchBody {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+    margin-right: calc(1rem * var(0));
+    margin-left: calc(1rem * calc(1 - var(0)));
+}
+
+.SearchBar {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+    padding: 8px;
+    width: 100%;
+    box-shadow: 0 5px 25px -10px black;
+}
+
+.Icons {
+    size: 25;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.DegreesBody {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.Degrees {
+    font-size: 30px;
+    line-height: 28px;
+    color: white;
+    font-weight: 300;
+    margin-left: 4px;
+    margin-right: 4px;
+}
