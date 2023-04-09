@@ -1,0 +1,71 @@
+.Status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgb(103 232 249);
+}
+
+.WeatherDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.Temperature {
+    font-size: 48px;
+    line-height: 1;
+}
+
+.Statistics {
+    display: flex;
+    flex-direction: column;
+    margin-top: calc(0.5rem * calc(1 - var(0)));
+    margin-bottom: calc(0.5rem * var(0));
+}
+
+.StatisticBody {
+    display: flex;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.SmIcon {
+    size: 18;
+    margin-right: 4px;
+}
+
+.Data {
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.SunAndTemps {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: calc(0.5rem * var(0));
+    margin-left: calc(0.5rem * calc(1 - var(0)));
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.Row {
+    font-weight: 300;
+    padding: 7px;
+}
