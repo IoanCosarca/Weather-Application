@@ -23,6 +23,9 @@
     padding: 8px;
     width: 100%;
     box-shadow: 0 5px 25px -10px black;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    text-transform: capitalize;
 }
 
 .Icons {

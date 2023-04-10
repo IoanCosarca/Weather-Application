@@ -1,7 +1,8 @@
 import React from 'react'
 import './Forecast.css'
+import { iconUrlFromCode } from '../services/weatherService'
 
-function Forecast({title}) {
+function Forecast({title, items}) {
     return (
         <div>
             <div className = "TitleBody">
@@ -10,31 +11,13 @@ function Forecast({title}) {
             <hr />
 
             <div className = "ForecastsBody">
-                <div className = "ForecastEntry">
-                    <p className = "Hour">04:30 PM</p>
-                    <img src = "http://openweathermap.org/img/wn/01d@2x.png" alt = "" className = "WeatherImg" />
-                    <p className = "ForecastTemp">22&deg;</p>
-                </div>
-                <div className = "ForecastEntry">
-                    <p className = "Hour">04:30 PM</p>
-                    <img src = "http://openweathermap.org/img/wn/01d@2x.png" alt = "" className = "WeatherImg" />
-                    <p className = "ForecastTemp">22&deg;</p>
-                </div>
-                <div className = "ForecastEntry">
-                    <p className = "Hour">04:30 PM</p>
-                    <img src = "http://openweathermap.org/img/wn/01d@2x.png" alt = "" className = "WeatherImg" />
-                    <p className = "ForecastTemp">22&deg;</p>
-                </div>
-                <div className = "ForecastEntry">
-                    <p className = "Hour">04:30 PM</p>
-                    <img src = "http://openweathermap.org/img/wn/01d@2x.png" alt = "" className = "WeatherImg" />
-                    <p className = "ForecastTemp">22&deg;</p>
-                </div>
-                <div className = "ForecastEntry">
-                    <p className = "Hour">04:30 PM</p>
-                    <img src = "http://openweathermap.org/img/wn/01d@2x.png" alt = "" className = "WeatherImg" />
-                    <p className = "ForecastTemp">22&deg;</p>
-                </div>
+                {items.map((item) => (
+                    <div className = "ForecastEntry">
+                        <p className = "Hour">{item.title}</p>
+                        <img src = {iconUrlFromCode(item.icon)} alt = "" className = "WeatherImg" />
+                        <p className = "ForecastTemp">{`${item.temp.toFixed()}`}&deg;</p>
+                    </div>
+                ))}
             </div>
         </div>
     )

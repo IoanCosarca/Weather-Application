@@ -18,17 +18,20 @@
 
 .ForecastsBody {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     color: white;
 }
 
 .ForecastEntry {
+    flex: 1 1 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .Hour {
