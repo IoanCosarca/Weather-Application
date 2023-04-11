@@ -28,6 +28,7 @@ const formatCurrentWeather = (data) => {
 
 const formatForecastWeather = (data) => {
     let { timezone, daily, hourly } = data;
+    console.log(daily);
     daily = daily.slice(1, 8).map((d) => {
         return {
             title: formatToLocalTime(d.dt, timezone, "ccc"),
@@ -57,7 +58,7 @@ const getFormattedWeatherData = async (searchParams) => {
     return { ...formattedCurrentWeather, ...formattedForecastWeather };
 }
 
-const formatToLocalTime = (secs, zone, format = "cccc, dd LLL yyyy' | Updated at: 'hh:mm a") =>
+const formatToLocalTime = (secs, zone, format = "cccc, dd LLL yyyy' | Updated at: 'hh:mm a' (Local Time)'") =>
     DateTime.fromSeconds(secs)
         .setZone(zone)
         .toFormat(format);
